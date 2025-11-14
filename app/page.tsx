@@ -113,7 +113,13 @@ export default function Page() {
             <a href="#faq" className="hover:underline">FAQ</a>
           </nav>
           <div className="flex items-center gap-2">
-            <Button variant="ghost" className="hidden md:inline-flex">Sign in</Button>
+            <a
+                href="https://app.autosop.ai/users/sign_in"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <Button variant="ghost" className="hidden md:inline-flex">Sign in</Button>
+            </a>
             <Button className="group bg-primary text-primary-foreground hover:bg-[#c3181d]">Book a demo <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition"/></Button>
           </div>
         </Section>
@@ -180,7 +186,7 @@ export default function Page() {
               title="For Franchisees & Ops"
               points={[
                 "Train new hires 2× faster with guided, clickable SOPs.",
-                "Embed SOPs right where work happens (HubSpot, Airtable, ADP, Softr).",
+                "Embed SOPs right where work happens (HubSpot and ADP).",
                 "Reduce tickets and rework with inline validations and templates.",
               ]}
             />
